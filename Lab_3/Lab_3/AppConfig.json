@@ -1,0 +1,5 @@
+{
+	"CacheEnabled": true,
+	"CustomersCacheKey": "customers_list",
+	"OrdersCacheKey": "orders_list"
+}
