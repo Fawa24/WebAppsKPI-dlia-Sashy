@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lab_1</name>
+    </assembly>
+    <members>
+        <member name="M:Lab_1.Controllers.CustomersController.GetAllCustomers">
+            <summary>
+            Returns all the existing customers
+            </summary>
+            <returns>All the customers from the storage</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.GetCustomerById(System.String)">
+            <summary>
+            Returns the customers with certain ID
+            </summary>
+            <param name="id">ID of the customers to return</param>
+            <returns>Customers with the specified ID</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.AddCustomer(Lab_1.Models.Customer)">
+            <summary>
+            Adds new customer to the storage
+            </summary>
+            <param name="customer">Customer to add</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.DeleteCustomer(System.String)">
+            <summary>
+            Deletes existing customer by specified ID
+            </summary>
+            <param name="id">ID of the customer to delete</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.UpdateCustomer(Lab_1.Models.Customer,System.String)">
+            <summary>
+            Updates customer's info
+            </summary>
+            <param name="customer">New customer's fileds</param>
+            <param name="id">ID of the customer to update</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.GetAllOrders">
+            <summary>
+            Returns all the existing orders
+            </summary>
+            <returns>All the orders from the storage</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.GetOrderById(System.String)">
+            <summary>
+            Returns the order with certain ID
+            </summary>
+            <param name="id">ID of the order to return</param>
+            <returns>Order with the specified ID</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.AddOrder(Lab_1.Models.Order)">
+            <summary>
+            Adds new order to the storage
+            </summary>
+            <param name="customer">Order to add</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.DeleteOrderById(System.String)">
+            <summary>
+            Deletes existing order by specified ID
+            </summary>
+            <param name="id">ID of the order to delete</param>s
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.UpdateOrder(Lab_1.Models.Order,System.String)">
+            <summary>
+            Updates order's info
+            </summary>
+            <param name="order">New order's fields</param>
+            <param name="id">ID of the order to update</param>
+            <returns>Nothing</returns>
+        </member>
+    </members>
+</doc>
