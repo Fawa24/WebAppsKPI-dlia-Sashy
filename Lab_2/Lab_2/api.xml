@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lab_2</name>
+    </assembly>
+    <members>
+        <member name="M:Lab_1.Controllers.CustomersController.GetAllCustomersAsync">
+            <summary>
+            Returns all the existing customers
+            </summary>
+            <returns>All the customers from the storage</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.GetCustomerByIdAsync(System.String)">
+            <summary>
+            Returns the customer with certain ID
+            </summary>
+            <param name="id">ID of the customer to return</param>
+            <returns>Customer with the specified ID</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.AddCustomerAsync(Lab_2.Models.DTOs.AddCustomerDTO)">
+            <summary>
+            Adds new customer to the storage
+            </summary>
+            <param name="customer">Customer to add</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.DeleteCustomerAsync(System.String)">
+            <summary>
+            Deletes existing customer by specified ID
+            </summary>
+            <param name="id">ID of the customer to delete</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.CustomersController.UpdateCustomerAsync(Lab_2.Models.DTOs.UpdateCustomerDTO,System.String)">
+            <summary>
+            Updates customer's info
+            </summary>
+            <param name="customer">New customer's fileds</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.GetAllOrdersAsync">
+            <summary>
+            Returns all the existing orders
+            </summary>
+            <returns>All the orders from the storage</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.GetOrderById(System.String)">
+            <summary>
+            Returns the order with certain ID
+            </summary>
+            <param name="id">ID of the order to return</param>
+            <returns>Order with the specified ID</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.AddOrder(Lab_2.Models.DTOs.AddOrderDTO)">
+            <summary>
+            Adds new order to the storage
+            </summary>
+            <param name="order">Order to add</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.DeleteOrderById(System.String)">
+            <summary>
+            Deletes existing order by specified ID
+            </summary>
+            <param name="id">ID of the order to delete</param>s
+            <returns>Nothing</returns>
+        </member>
+        <member name="M:Lab_1.Controllers.OrdersController.UpdateOrderAsync(Lab_2.Models.DTOs.UpdateOrderDTO,System.String)">
+            <summary>
+            Updates order's info
+            </summary>
+            <param name="order">New order's fields</param>
+            <param name="id">Id of the order to update</param>
+            <returns>Nothing</returns>
+        </member>
+        <member name="T:Lab_2.Databases.Migrations.InitialMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab_2.Databases.Migrations.InitialMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab_2.Databases.Migrations.InitialMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Lab_2.Databases.Migrations.InitialMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
