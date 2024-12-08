@@ -5,12 +5,12 @@
     "version": "1.0"
   },
   "paths": {
-    "/authors": {
+    "/customers": {
       "get": {
         "tags": [
-          "Authors"
+          "Customers"
         ],
-        "summary": "Returns all the existing authors",
+        "summary": "Returns all the existing customers",
         "responses": {
           "200": {
             "description": "OK",
@@ -19,7 +19,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/Customer"
                   }
                 }
               },
@@ -27,7 +27,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/Customer"
                   }
                 }
               },
@@ -35,7 +35,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Author"
+                    "$ref": "#/components/schemas/Customer"
                   }
                 }
               }
@@ -45,25 +45,25 @@
       },
       "post": {
         "tags": [
-          "Authors"
+          "Customers"
         ],
-        "summary": "Adds new author to the storage",
+        "summary": "Adds new customer to the storage",
         "requestBody": {
-          "description": "Author to add",
+          "description": "Customer to add",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             }
           }
@@ -75,17 +75,17 @@
         }
       }
     },
-    "/authors/{id}": {
+    "/customers/{id}": {
       "get": {
         "tags": [
-          "Authors"
+          "Customers"
         ],
-        "summary": "Returns the author with certain ID",
+        "summary": "Returns the customers with certain ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the author to return",
+            "description": "ID of the customers to return",
             "required": true,
             "schema": {
               "type": "string"
@@ -98,17 +98,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Author"
+                  "$ref": "#/components/schemas/Customer"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Author"
+                  "$ref": "#/components/schemas/Customer"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Author"
+                  "$ref": "#/components/schemas/Customer"
                 }
               }
             }
@@ -117,14 +117,14 @@
       },
       "delete": {
         "tags": [
-          "Authors"
+          "Customers"
         ],
-        "summary": "Deletes existing author by specified ID",
+        "summary": "Deletes existing customer by specified ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the author to delete",
+            "description": "ID of the customer to delete",
             "required": true,
             "schema": {
               "type": "string"
@@ -139,14 +139,14 @@
       },
       "put": {
         "tags": [
-          "Authors"
+          "Customers"
         ],
-        "summary": "Updates author's info",
+        "summary": "Updates customer's info",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the author to update",
+            "description": "ID of the customer to update",
             "required": true,
             "schema": {
               "type": "string"
@@ -154,21 +154,21 @@
           }
         ],
         "requestBody": {
-          "description": "New author's fileds",
+          "description": "New customer's fileds",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/Customer"
               }
             }
           }
@@ -180,12 +180,12 @@
         }
       }
     },
-    "/books": {
+    "/orders": {
       "get": {
         "tags": [
-          "Books"
+          "Orders"
         ],
-        "summary": "Returns all the existing books",
+        "summary": "Returns all the existing orders",
         "responses": {
           "200": {
             "description": "OK",
@@ -194,7 +194,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Book"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               },
@@ -202,7 +202,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Book"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               },
@@ -210,7 +210,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Book"
+                    "$ref": "#/components/schemas/Order"
                   }
                 }
               }
@@ -220,24 +220,24 @@
       },
       "post": {
         "tags": [
-          "Books"
+          "Orders"
         ],
-        "summary": "Adds new book to the storage",
+        "summary": "Adds new order to the storage",
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             }
           }
@@ -249,17 +249,17 @@
         }
       }
     },
-    "/books/{id}": {
+    "/orders/{id}": {
       "get": {
         "tags": [
-          "Books"
+          "Orders"
         ],
-        "summary": "Returns the book with certain ID",
+        "summary": "Returns the order with certain ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the book to return",
+            "description": "ID of the order to return",
             "required": true,
             "schema": {
               "type": "string"
@@ -272,17 +272,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Book"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Book"
+                  "$ref": "#/components/schemas/Order"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Book"
+                  "$ref": "#/components/schemas/Order"
                 }
               }
             }
@@ -291,14 +291,14 @@
       },
       "delete": {
         "tags": [
-          "Books"
+          "Orders"
         ],
-        "summary": "Deletes existing book by specified ID",
+        "summary": "Deletes existing order by specified ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the book to delete",
+            "description": "ID of the order to delete",
             "required": true,
             "schema": {
               "type": "string"
@@ -313,14 +313,14 @@
       },
       "put": {
         "tags": [
-          "Books"
+          "Orders"
         ],
-        "summary": "Updates book's info",
+        "summary": "Updates order's info",
         "parameters": [
           {
             "name": "id",
             "in": "path",
-            "description": "ID of the book to update",
+            "description": "ID of the order to update",
             "required": true,
             "schema": {
               "type": "string"
@@ -328,21 +328,21 @@
           }
         ],
         "requestBody": {
-          "description": "New book's fields",
+          "description": "New order's fields",
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/Order"
               }
             }
           }
@@ -357,7 +357,7 @@
   },
   "components": {
     "schemas": {
-      "Author": {
+      "Customer": {
         "type": "object",
         "properties": {
           "id": {
@@ -371,19 +371,19 @@
         },
         "additionalProperties": false
       },
-      "Book": {
+      "Order": {
         "type": "object",
         "properties": {
           "id": {
             "type": "string",
             "nullable": true
           },
-          "name": {
+          "dish": {
             "type": "string",
             "nullable": true
           },
-          "author": {
-            "$ref": "#/components/schemas/Author"
+          "customer": {
+            "$ref": "#/components/schemas/Customer"
           }
         },
         "additionalProperties": false
